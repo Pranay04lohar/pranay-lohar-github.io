@@ -1958,6 +1958,25 @@ textarea.form-input::-webkit-resizer { display: none; }
   box-shadow: 0 4px 16px rgba(0,0,0,0.16);
 }
 
+.project-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+.project-img {
+  display: block;
+  margin: 0 auto;
+  width: 110px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
 .project-img-placeholder {
   width: 120px;
   height: 120px;
@@ -1969,12 +1988,81 @@ textarea.form-input::-webkit-resizer { display: none; }
   justify-content: center;
 }
 
+.project-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
 .project-title {
   color: #fff;
   font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
-  margin-top: 0;
+  margin: 0;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.github-link:hover {
+  color: hsl(45, 100%, 72%);
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.project-description {
+  color: #b0b0b0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  padding: 0 8px;
+}
+
+.live-site-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  min-width: 140px;
+}
+
+.live-site-btn ion-icon {
+  font-size: 1.2rem;
+}
+
+.live-site-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  background: linear-gradient(to right, hsl(45, 100%, 75%), hsl(35, 100%, 71%));
+}
+
+.live-site-btn:active {
+  transform: translateY(-1px);
 }
 
 @media (max-width: 900px) {
